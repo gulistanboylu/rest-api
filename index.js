@@ -6,7 +6,7 @@ const app = express();
 require('./database-connection')
 
 app.get('/', (req, res) => {
-    res.send('await PersonService.findAll()')
+    res.send('My awsome api :)')
 });
 
 app.use(bodyParser.json())

@@ -15,7 +15,7 @@ async function del(id) {
     return PersonModel.remove({ id })
 }
 async function update(id, person) {
-    return PersonModel.findByIdAndUpdate(id, { person })
+    return PersonModel.findOneAndUpdate({ id:id },  person )
 }
 async function find(id) {
     return PersonModel.findOne({ id })

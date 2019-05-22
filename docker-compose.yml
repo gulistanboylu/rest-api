@@ -15,7 +15,5 @@ services:
       command: npm run dev
   mongo:
       image: mongo
-      expose:
-        - 27017
-      volumes:
-        - ./data/db:/data/db
+      ports:
+        - 27017:27017
